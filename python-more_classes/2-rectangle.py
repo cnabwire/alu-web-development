@@ -37,7 +37,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-    def area(self): 
+    def area(self):
         """ pub inst method to cal.. the area"""
         return self.__height * self.__width
 
