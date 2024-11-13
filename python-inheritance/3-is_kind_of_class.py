@@ -15,7 +15,7 @@ def is_kind_of_class(obj, a_class):
         a_class: The class to compare against.
 
     Returns:
-        True if the object is an instance of a_class or if the object 
-        is an instance of a class that inherited from a_class, else False.
+        True if the object is an instance of a_class or if the obj...
+        is an inst.. of a class that inherited from a_class, else False.
     """
     return type(obj) is a_class or issubclass(type(obj), a_class)
