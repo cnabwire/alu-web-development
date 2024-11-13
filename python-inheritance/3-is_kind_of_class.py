@@ -5,7 +5,6 @@ of a specific class or if it is an instance of a class that inherited
 from the specified class.
 """
 
-
 def is_kind_of_class(obj, a_class):
     """
     Checks if the object is an instance of the specified class or
@@ -19,4 +18,4 @@ def is_kind_of_class(obj, a_class):
         True if the object is an instance of a_class or if the object 
         is an instance of a class that inherited from a_class, else False.
     """
-    return isinstance(obj, a_class)
+    return type(obj) is a_class or issubclass(type(obj), a_class)
